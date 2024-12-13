@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:17
 WORKDIR /app
 COPY --from=builder /build/target/springboot3-hello-world.jar app.jar
 EXPOSE 8099
